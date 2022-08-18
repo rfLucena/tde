@@ -1,0 +1,107 @@
+
+#EX 1
+
+# Leitura de Dados
+print('Insira um valor: ')
+v = int(input())
+
+# Conversão
+ant = (v - 1)
+suc = (v + 1)
+
+# Resultado
+print(f'O antecessor deste valor é {ant} e seu sucessor é {suc}')
+
+
+#EX 2
+
+anoDeNascimento = int(input("Digite o seu ano de nascimento: "))
+anoAtual = 2022
+
+idade =anoAtual - anoDeNascimento
+print("Sua idade em 2023 será: " + str(idade +10))
+
+
+#EX 3
+
+print(f" Digite o seu salário atual: ")
+salario = int(input())
+
+salariominimo = 1212
+qsalariomin = salario/salariominimo
+print(f"Você recebe {qsalariomin} salário minimo")
+
+
+#EX 4
+
+print(f"Digite o diametro do circulo: ")
+dCirculo = int(input())
+
+raio = dCirculo/2
+area = (3.14 * (raio * raio))
+
+print(f"A área desse círculo é igual a: {area}")
+
+
+#EX 5
+
+print(f"Digite o preço de um produto: ")
+v = int(input())
+
+parcela3 = (v + (v % 5)) / 3
+print(f"O valor dividido em 3 parcelas com 5% de juros é: {parcela3}")
+
+parcela2 = v / 2
+print(f"O valor dividido em 2 parcelas sem juros: {parcela2}")
+
+parcelaS = (5 % v)
+print(f"O valor a vista com 5% de desconto é: {parcelaS}")
+
+
+#EX 6
+
+import.math
+
+print(f"Digite o cateto de um triângulo: ")
+c1 = int(input())
+print(f"Digite o cateto de um triângulo: ")
+c2 = int(input())
+
+
+hip = math.sqrt((c1 ** 2) + (c2 ** 2))
+
+
+print(f"A hipotenusa do triãngulo é: {hip} ")
+
+
+#EX 7
+
+print(f"Digite as horas: ")
+h = int(input())
+print(f"Digite os minutos: ")
+m = int(input())
+print(f"Digite os segundos: ")
+s = int(input())
+
+tempoMinuto = ((s / 60) + (h * 60))
+tempoSegundos = ((m * 60) + s + ((h * 60) * 60))
+
+print(f"Desde o inicio do dia se passaram {tempoSegundos} segundos e {tempoMinuto} minutos")
+
+
+#EX 8
+
+
+print(f"Insira a altura do cilindro: ")
+h = float(input())
+print(f"Insira o raio do cilindro: ")
+r = float(input())
+
+area = (2 * 3.14 * r * h) + (2 * 3.14 * (r ** 2))
+litros = area / 3
+
+latas = litros * 5
+
+vtotal = latas * 50
+
+print(f"A quantidade total de latas necessárias será: {latas} e o valor total necessario será: {vtotal}")
